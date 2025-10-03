@@ -1,0 +1,145 @@
+    h1 {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    color: rgb(212, 0, 255);
+  }
+
+  h2 {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    color: rgb(255, 179, 0);
+  }
+
+  p {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+  }
+
+  body {
+  font-family: 'Inter', sans-serif;
+  background: #1c0000;
+  color: #f0f0f0;
+  line-height: 1.7;
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.tab-container {
+  display: flex;
+  justify-content: center; /* centers the buttons horizontally */
+  gap: 10px; /* optional: adds spacing between buttons */
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  color: white;               /* Example text color */
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  border-bottom: 2px solid yellow; /* Highlight active tab */
+}
+
+#video-container {
+  display: flex;
+  justify-content: center; /* center videos horizontally */
+  gap: 20px;               /* spacing between videos */
+  flex-wrap: wrap;          /* wrap on smaller screens */
+}
+
+#video-container iframe {
+  width: 400px;  /* adjust as needed */
+  height: 225px; /* maintain 16:9 aspect ratio */
+  border: none;
+}
+
+
+ /* Style the navbar */
+#navbar {
+  display: flex;
+  justify-content: center;   /* Center the button group */
+  align-items: center;
+  background-color: #333;    /* Navbar background */
+  padding: 10px;
+  gap: 30px;                 /* Space between buttons */
+
+  position: sticky;          /* Stick in place while scrolling */
+  top: 0;                    /* Stick to the very top */
+  z-index: 1000;             /* Stay above other elements */
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  justify-content: center;  
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+} 
+
+.circle-image {
+  width: 200px;        /* adjust size */
+  height: 200px;
+  border-radius: 50%;  /* makes it circular */
+  object-fit: cover;   /* crop properly */
+  display: block;      /* allows margin auto centering */
+  margin: 0 auto;      /* centers horizontally */
+}
+
+img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  justify-content: center;  
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+#image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Default link style */
+#navbar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Active link style */
+#navbar a.active {
+  font-weight: bold;
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+/* Optional: hover effect */
+#navbar a:hover {
+  color: darkblue;
+}
